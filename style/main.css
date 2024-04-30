@@ -1,0 +1,87 @@
+/* Column Drop */
+body{
+    background: hsl(300, 100%, 99%);
+    color: #240e24;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+  }
+  
+  .columna1,
+  .columna2,
+  .columna3 {
+    width: 100%;
+  }
+
+  .columna1{
+    background: #eddfed;
+    
+  }
+
+  .columna2{
+    background: #d9c1d9;
+  }
+
+  .columna3{
+    background: #d4b6d4;
+  }
+
+  p{
+    margin: 0 auto;
+    text-align: left;
+    width: 80%;
+    padding: 2em;
+  }
+
+  img{
+    display: flex;
+    margin: auto;
+    min-height: 50px;
+    max-height: 200px;
+    object-fit: cover;
+    padding-top: 1em;
+  }
+
+  .center-img{
+    display: flex;
+    margin: auto;
+    width: 100%;
+    min-height: 50px;
+    max-height: 200px;
+    object-fit: cover;
+    padding-top: 1em;
+  }
+  
+  @media (min-width: 600px) {
+    .columna1 {
+      width: 60%;
+      -webkit-order: 2;
+      order: 2;
+    }
+  
+    .columna2 {
+      width: 40%;
+      -webkit-order: 1;
+      order: 1;
+    }
+  
+    .columna3 {
+      width: 100%;
+      -webkit-order: 3;
+      order: 3;
+    }
+  }
+  
+  @media (min-width: 800px) {
+    .columna2,
+    .columna3 {
+      width: 20%;
+    }
+  }
+  
